@@ -9,7 +9,7 @@ public class ArrayMulti {
             {"kelompok 2","Diana","Nabila"},
         };
 
-        //Contoh memanggil array menggunakan looping
+        //1) Contoh memanggil array menggunakan looping
         for (int i=0; i<groups.length; i++) {
             System.out.print("\n"+groups[i][0]+" : ");
             for (int x=1; x<groups[i].length; x++) {
