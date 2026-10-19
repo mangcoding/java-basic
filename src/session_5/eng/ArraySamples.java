@@ -10,10 +10,12 @@ public class ArraySamples {
         //with array
         String students[] = {"Arwa","Maryam","Muhammad"};
         String[] names = {"Hai","Hello"};
-        String parents[] = new String[2];
+        String parents[] = new String[10];
 
-        System.out.print(students[0]);
-        System.out.print(names[0]);
-        System.out.print(parents[0]);
+        System.out.println(students[0]);
+        System.out.println(names[0]);
+        System.out.println(parents[0]);
+        parents[0] = "Abdullah";
+        System.out.println(parents[0]);
     }
 }
