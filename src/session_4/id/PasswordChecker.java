@@ -1,4 +1,4 @@
-package session_4;
+package session_4.id;
 
 import java.util.Scanner;
 public class PasswordChecker {

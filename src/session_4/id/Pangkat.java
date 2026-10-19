@@ -1,4 +1,4 @@
-package session_4;
+package session_4.id;
 
 public class Pangkat {
     //Case 7 pangkat 3 = 1 X 7 x 7 x 7 = 343
