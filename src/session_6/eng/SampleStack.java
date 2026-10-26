@@ -1,17 +1,18 @@
-package assignment_5.eng;
-import java.util.ArrayList;
+package session_6.eng;
+import java.util.Stack;
 
-public class SampleArrayList {
+public class SampleStack {
     public static void main(String[] args) {
-        ArrayList <String> students = new ArrayList<String>();
-        students.add("Arwa");
-        students.add("Maryam");
-        students.add("Yusuf");
-        students.add("Joseph");
-        students.add("Neva");
+        Stack <String> students = new Stack<String>();
+        students.push("Arwa");
+        students.push("Maryam");
+        students.push("Yusuf");
+        students.push("Joseph");
+        students.push("Neva");
 
-        System.out.print(students.get(2)); //get the specific value by index
+        System.out.print(students.pop()); //get the data from the top and remove it
         System.out.print(students.size()); //Length of array list
+        System.out.print(students.peek()); //Check the last data
 
         for (String name:students) { //foreach in JAVA
             System.out.println(name);
@@ -22,12 +23,9 @@ public class SampleArrayList {
             System.out.println(name);
         }
 
-        students.set(3,"Dalia");
+        students.set(2,"Dalia");
         for (String name:students) { //foreach in JAVA
             System.out.println(name);
         }
-
-        students.clear();
-        System.out.print(students.size());
     }
 }
