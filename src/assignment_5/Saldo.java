@@ -57,5 +57,6 @@ public class Saldo {
                 System.out.println("Total Uang Keluar : "+ (total*-1));
             }
         }while(true);
+        inputx.close();
     }
 }
