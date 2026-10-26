@@ -33,6 +33,22 @@ public class AtmSimulation {
                 transactions[historyIndex++] = -amount;
             }else if (menu == 3) {
                 System.out.print("Balance: "+balance);
+            }else if (menu == 4) {
+                int totalDeposit = 0;
+                for (int i=0; i<transactions.length; i++) {
+                    if (transactions[i] > 0) {
+                        totalDeposit += transactions[i];
+                    }
+                }
+                System.out.print("Total Deposit: "+totalDeposit);
+            }else if (menu == 5) {
+                int totalWithdrawn = 0;
+                for (int i=0; i<transactions.length; i++) {
+                    if (transactions[i] < 0) {
+                        totalWithdrawn += transactions[i];
+                    }
+                }
+                System.out.print("Total Wirthdrawn: "+totalWithdrawn);
             }else if (menu == 6) {
                 for (int i=0; i<transactions.length; i++) {
                     System.out.println(i+1+" "+transactions[i]);
