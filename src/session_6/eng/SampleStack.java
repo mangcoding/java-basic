@@ -10,7 +10,7 @@ public class SampleStack {
         students.push("Joseph");
         students.push("Neva");
 
-        System.out.print(students.pop()); //get the data from the top and remove it
+        System.out.print(students.pop()); //get the data from the top and remove it (Neva gone)
         System.out.print(students.size()); //Length of array list
         System.out.print(students.peek()); //Check the last data
 
@@ -18,12 +18,12 @@ public class SampleStack {
             System.out.println(name);
         }
 
-        students.remove(3); //remove joseph, and Neva will replace his index
+        students.remove(3); //remove joseph
         for (String name:students) { //foreach in JAVA
             System.out.println(name);
         }
 
-        students.set(2,"Dalia");
+        students.set(2,"Dalia"); //Replace value on index 2 become Dalia
         for (String name:students) { //foreach in JAVA
             System.out.println(name);
         }
